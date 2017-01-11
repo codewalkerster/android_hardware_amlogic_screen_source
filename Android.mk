@@ -21,7 +21,7 @@ LOCAL_C_INCLUDES += frameworks/native/include/utils \
 
 LOCAL_SHARED_LIBRARIES:= libutils liblog libui
 
-LOCAL_MODULE := screen_source.amlogic
+LOCAL_MODULE := screen_source.$(TARGET_PRODUCT)
 LOCAL_CFLAGS:= -DLOG_TAG=\"screen_source\"
 
 ifeq ($(GPU_TYPE),t83x)
